@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('retorno-json', function () {
+    // Laravel automaticamente retorna arrays em JSON
+    return [
+        "chave" => "valor",
+        "chave2" => "valor2",
+        "chave3" => [1,2,3,4]
+    ];
+});
