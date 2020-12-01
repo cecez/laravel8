@@ -25,3 +25,7 @@ Route::get('retorno-json', function () {
         "chave3" => [1,2,3,4]
     ];
 });
+
+Route::get('teste-componente', function () {
+   return view('teste');
+});
